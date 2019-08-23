@@ -1,0 +1,13 @@
+- name: run terraform deploy to AWS
+  terraform:
+    project_path: aws_deploy/
+    state: present
+    force_init: false
+    backend_config:
+      region: us-east-1
+  register: results
+
+- name: set tf_results if changed
+  set_fact:
+    tf_results: "{{ results }}"
+  when: results['changed'] == True

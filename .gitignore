@@ -1,0 +1,13 @@
+keys
+vagrant
+*.retry
+*.tfstate
+*.backup
+lock.json
+*provider*
+.DS_Store
+*.pptx
+*.cast
+*.png
+*.mp4
+images/tf_nats_eec.textClipping
