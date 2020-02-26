@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-ansible = "==2.7"
+ansible = "==2.7.16"
 awscli = "*"
 
 [requires]
